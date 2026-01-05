@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>University of Sydney - Clubs</title>
+<script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>University of Sydney</header>
+<nav>
+<img src="logo.png" class="logo" alt="University Logo">
+<div class="nav-links">
+<a href="info.html">Clubs</a>
+</div>
+</nav>
+
+<div class="container">
+<h1>Student Clubs</h1>
+<label for="club">Select a club:</label>
+<select id="club">
+<option value="choose">-- Choose a Club --</option>
+<option value="club1">Robotics Club</option>
+<option value="club2">Debate Society</option>
+<option value="club3">Photography Club</option>
+<option value="club4">Drama Club</option>
+<option value="club5">Environmental Club</option>
+<option value="club6">Coding Club</option>
+<option value="club7">Sports Club</option>
+</select>
+<button py-click="clubbing">Show Club Information</button>
+<div id="info"><pre id="clubinfo"></pre></div>
+
+<footer>2025 University of Sydney®</footer>
+</div>
+
+
+<script type="py" src="main.py"></script>
+</body>
+</html>
